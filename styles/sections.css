@@ -6,6 +6,24 @@
 }
 
 section header {
+    display: flex;
+    justify-content: space-between; /* Empurra o título para um lado e o link para o outro */
+    align-items: center;           /* Garante que fiquem alinhados na mesma altura */
+    width: 100%;                   /* Garante que o header use todo o espaço disponível */
+}
+
+/* Ajuste fino para o link "Ver tudo" */
+header a {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    text-decoration: none;
+}
+
+
+
+section header {
+    display: flex;
     border-top: 1px solid var(--stroke-color);
     padding-block: 12px 24px;
     font: var(--text-span);
@@ -22,6 +40,8 @@ section header {
         }
         &:hover span {
             background-image: url(../assets/icons/ArrowRight.svg);
+            width: 14px;
+            height: 14px;
             
         }
 
@@ -95,3 +115,4 @@ section header {
         }
     }
 }
+

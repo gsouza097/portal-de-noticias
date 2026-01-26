@@ -9,6 +9,14 @@
 
 .grid-cols-2 {
     grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.gap-16 {
     gap: 16px;
 }
 
